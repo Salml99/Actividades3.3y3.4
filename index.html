@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="calcula.css" />
+    <script type="text/javascript" src="calcula.js"></script>
+</head>
+<body>
+    <div class="calculadora">
+        <form action="#" name="calculadora" id="calculadora">
+            
+            <p id="textoPantalla">0</p>
+            <p>
+                <input type="button" class="largo" value="Retr" onclick="retro()"   />
+                <input type="button" class="largo" value="CE" onclick="borradoParcial()"  />
+                <input type="button" class="largo" value="C" onclick="borradoTotal()"  />
+            </p>
+            <p>Resultados en:
+                <input type="button" class="largoR" value="Binario" onclick="binario()">
+                <input type="button" class="largoR" value="Octal" onclick="octal()">
+                <input type="button" class="largoR" value="Hexadecimal" onclick="hexa()">
+                <br>
+                
+            </p>
+            
+            <p>
+                <input type="button" value="7" onclick="numero('7')" />
+                <input type="button" value="8" onclick="numero('8')" />
+                <input type="button" value="9" onclick="numero('9')" />
+                <input type="button" class="op" value="/" onclick="operar('/')"  />
+                <input type="button" class="op" value="Raiz" onclick="raizc()" />
+            </p>
+            <p>
+                <input type="button" value="4" onclick="numero('4')" />
+                <input type="button" value="5" onclick="numero('5')" />
+                <input type="button" value="6" onclick="numero('6')" />
+                <input type="button" class="op" value="*" onclick="operar('*')" />
+                <input type="button" class="op" value="%" onclick="porcent()" />
+            </p>
+            <p>
+                <input type="button" value="1" onclick="numero('1')" />
+                <input type="button" value="2" onclick="numero('2')" />
+                <input type="button" value="3" onclick="numero('3')" />
+                <input type="button" class="op" value="-" onclick="operar('-')" />
+                <input type="button" class="op" value="1/x" onclick="inve()" />
+            </p>
+            <p>
+                <input type="button" value="0" onclick="numero('0')" />
+                <input type="button" value="+/-" onclick="opuest()" />
+                <input type="button" value="." onclick="numero('.')" />
+                <input type="button" class="op" value="+" onclick="operar('+')" />
+                <input type="button" class="ig" value="=" onclick="igualar()" />
+            </p>
+           
+            <div id="contenido">
+                <p id="cientifica">
+                    <input type="button" value="sin" onclick="sin()" />
+                    <input type="button" value="cos" onclick="cos()" />
+                    <input type="button" value="tan" onclick="tang()" />
+                    <input type="button" value="log" onclick="log()" />
+                    <input type="button" value="ln" onclick="ln()" />
+                </p>
+                <p id="cientifica">
+                    <input type="button" value="arcsin" onclick="asin()" />
+                    <input type="button" value="arccos" onclick="acos()" />
+                    <input type="button" value="arctan" onclick="atan()" />
+                    <input type="button" value="π" onclick="pi()" />
+                    <input type="button" value="e" onclick="e()" />
+                </p>
+                <p>
+                    <input type="button" value="abs" onclick="absoluto()" />
+                    <input type="button" value="^" onclick="operar('ex')" />
+                    <input type="button" value="!" onclick="factorial()" />
+                </p>
+                <P>Notas: Las funciones trigonom&eacute;tricas estan en radianes.
+                <br>Las Funciones trigonom&eacute;tricas inversas NO estan en radianes.</P>
+            </div>
+             <a onClick="muestra_oculta('contenido');mensaje()" title="">Click para Mostrar parte Cientifica</a>
+        </form>
+    </div>
+    <p>Nota: Para poder visualizar los resultados en alguna base primero se debe dar click en el botón =.
+    </p>
+</body>
+</html>

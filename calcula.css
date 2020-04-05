@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:wght@700&display=swap');
+/*aspectos generales: bordes y color de fondo de calculadora*/
+*{
+    font-family: 'Cuprum', sans-serif;
+}
+
+.calculadora { 
+    border: 3px #17202A ridge; 
+    width: 500px;
+    text-align: center;
+    border-radius: 8px;
+    background-color:#7FB3D5;
+}
+
+/*pantalla de visualización: bordes, posición, color de fondo, estilo letra.*/
+#textoPantalla { 
+    width: 430px; 
+    border: 2px black solid; 
+    height: 30px;
+    text-align: right;
+    position: relative; 
+    left: 30px;  
+    padding: 5px 5px 5px 5px;
+    background-color: white; 
+    overflow: hidden;
+    font-family: 'Cuprum', sans-serif;
+    font-size: 25px;
+    border-radius: 8px;
+}
+
+/*botones normales: anchura y margen*/
+.calculadora [type=button] {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    width: 80px; 
+    height: 40px;
+    padding: 0;
+    background-color: #fff;
+}
+.calculadora [type=button]:hover {
+   background-color: #D5DBDB;
+
+}
+/*botones especiales*/
+.calculadora input.largo { 
+    background-color: #000; 
+    color: #fff;
+    width: 120px; 
+}
+.calculadora input.largoR { 
+    background-color: #E74C3C;
+    color: #fff;
+    width: 100px;
+}
+.calculadora input.largoR:hover {
+    background-color: #F5B7B1;
+}
+.calculadora input.ig{
+    background-color: #E74C3C;
+    color: #fff;
+}
+.calculadora input.ig:hover{
+    background-color: #F5B7B1;
+}
+.calculadora input.op{
+    background-color: #000; 
+    color: #fff;
+}
+a{
+    cursor: pointer;
+    color: #2E4053;
+    font-size: 20px;
+}
+a:hover{
+     color: #5D6D7E ;
+}
+.calculadora #contenido [type=button] {
+    background-color: #1A5276; 
+    color: #fff; 
+}
+.calculadora #contenido [type=button]:hover {
+    background-color: #2980B9;
+    color: #000;
+}
